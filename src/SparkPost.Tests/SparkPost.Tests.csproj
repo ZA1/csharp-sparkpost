@@ -103,7 +103,6 @@
     <Compile Include="SubaccountTest.cs" />
     <Compile Include="Utilities\SnakeCaseTests.cs" />
     <Compile Include="RelayWebhookTests.cs" />
-    <Compile Include="InboundDomainTests.cs" />
     <Compile Include="WebhookTests.cs" />
   </ItemGroup>
   <ItemGroup>

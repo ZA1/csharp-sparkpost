@@ -38,8 +38,8 @@ namespace SparkPost
             Webhooks = new Webhooks(this, requestSender, dataMapper);
             Subaccounts = new Subaccounts(this, requestSender, dataMapper);
             MessageEvents = new MessageEvents(this, requestSender);
-            RelayWebhooks = new RelayWebhooks(this, requestSender, dataMapper);
             InboundDomains = new InboundDomains(this, requestSender, dataMapper);
+            RelayWebhooks = new RelayWebhooks(this, requestSender, dataMapper);
 
             CustomSettings = new Settings();
         }
@@ -53,8 +53,8 @@ namespace SparkPost
         public IWebhooks Webhooks { get; }
         public ISubaccounts Subaccounts { get; }
         public IMessageEvents MessageEvents { get; }
-        public IRelayWebhooks RelayWebhooks { get; }
         public IInboundDomains InboundDomains { get; }
+        public IRelayWebhooks RelayWebhooks { get; }
         public string Version => "v1";
 
         public Settings CustomSettings { get; }
